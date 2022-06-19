@@ -21,20 +21,9 @@ namespace TcKimlikNoDogrulama
         {
             TcKimlikNoDogrulama.KPSPublic kps = new TcKimlikNoDogrulama.KPSPublic();
 
-            try
-            {
                 bool kontrol = kps.TCKimlikNoDogrula(long.Parse(txtTcKimlik.Text), txtisim.Text.ToUpper(), txtsoyisim.Text.ToUpper(), int.Parse(txtdoğumyili.Text));
-            }
-            catch
-            {
-                MessageBox.Show("Bilgileriniz Doğrulandı", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                if (true)
-                {
-                    MessageBox.Show("Bilgileriniz Doğrulanamadı", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-
-            }
+            
+       
         
 
           
